@@ -13,6 +13,13 @@ a {
   text-decoration: none;
 }
 
+button{
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 10px;
@@ -331,4 +338,22 @@ body {
   font-size: 32px;
   line-height: 1.34;
   font-style: italic;
+}
+
+.video {
+  margin-bottom: 150px;
+  padding-top: 150px;
+}
+
+.video__box {
+  max-width: 997px;
+  min-height: 600px;
+  margin-left: auto;
+  background-image: url(../img/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
