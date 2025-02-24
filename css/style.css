@@ -113,7 +113,7 @@ body {
   margin-left: auto;
 }
 
-.button{
+.button {
   display: inline-block;
   padding: 21px 55px;
   text-transform: uppercase;
@@ -124,7 +124,7 @@ body {
   margin-left: auto;
   transition: all .3s ease;
 
-   &.button:hover {
+  &.button:hover {
     color: #fff;
     background-color: #7449BB;
   }
@@ -151,7 +151,7 @@ body {
 }
 
 .abaut {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 
@@ -181,7 +181,7 @@ body {
   line-height: 1.2;
 }
 
-.abaut__text p{
+.abaut__text p {
   margin-bottom: 15px;
 }
 
@@ -191,35 +191,85 @@ body {
 }
 
 .abaut__slider {
-  width: 1600px;
+  width: 1800px;
   padding-left: 200px;
   margin-left: -200px;
   padding-bottom: 20px;
 }
 
-.swiper {}
-
-.swiper-wrapper {}
-
-.swiper-slide {}
-
-.abaut__item {}
-
 .abaut__item-title {
   margin-bottom: 20px;
 }
 
-.abaut__arrow{
+.abaut__arrow {
   margin-left: -198px;
   margin-top: 10px;
 }
 
-/* .container-arrow .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
-  opacity: 1;
-} */
+.accordeon {
+  margin-bottom: 223px;
+}
 
-.swiper-button-prev {}
+.accordeon__inner {
+  padding-left: 200px;
+}
 
-.swiper-button-next {}
+.accordeon__item {
+  border-bottom: 1px solid #000;
+  padding: 0 101px 0 0;
+  position: relative;
+}
 
-.abaut__btn {}
+.accordeon__item--active .accordeon__content{
+  display: block;
+}
+
+.accordeon__item::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 51px;
+  background-image: url(../img/arrow-dawn.svg);
+  right: 85px;
+  top: 50px;
+}
+
+.accordeon__item:last-child::after{
+  content: '';
+  width: 65px;
+  height: 120px;
+  bottom: -73px;
+  left: 268px;
+  position: absolute;
+  background-image: url(../img/accordion-img.jpg);
+}
+
+.accordeon__triger {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-top: 50px;
+}
+
+.accordeon__triger-title {
+  flex-basis: 300px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  padding-bottom: 42px;
+}
+
+.accordeon__triger-text {
+  flex-basis: 377px;
+  margin-right: 104px;
+  padding-bottom: 20px;
+}
+
+.accordeon__content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+.accordeon__content p{
+  padding-top: 10px;
+}
