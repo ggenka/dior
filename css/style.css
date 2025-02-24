@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-button{
+button {
   background-color: transparent;
   padding: 0;
   border: 0;
@@ -73,6 +73,15 @@ body {
   display: flex;
   gap: 20px;
 }
+
+.user-nav svg path {
+  transition: all .3s ease-in-out;
+}
+
+.user-nav svg:hover path {
+  fill: #7449BB;
+}
+
 
 .top {
   margin-bottom: 100px;
@@ -327,7 +336,7 @@ body {
   margin-bottom: 10px;
 }
 
-.products__item-name span{
+.products__item-name span {
   display: block;
   font-weight: 700;
   margin-bottom: 10px;
@@ -356,4 +365,105 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.footer {
+  background-color: #c4a9cd;
+  padding: 66px 0 100px;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 70px;
+  margin-bottom: 70px;
+}
+
+.footer__logo {
+  margin-right: 10px;
+}
+
+.footer__items {
+  flex-basis: 387px;
+}
+
+.footer__item+.footer__item {
+  margin-top: 70px;
+}
+
+.footer__item-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer__item-form {
+  position: relative;
+}
+
+.footer__item-input {
+  width: 100%;
+  display: block;
+  padding: 10px 60px 10px 0;
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: #c4a9cd;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #1B1B1B;
+}
+
+.footer__item-input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000;
+  opacity: 0.4;
+}
+
+.footer__item-btn {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.footer__item-list li {
+  padding-top: 10px;
+}
+
+.footer__item-link {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer__social-list {
+  align-self: flex-end;
+  margin-left: 10px;
+  margin-right: 90px;
+}
+
+.footer__social-item+.footer__social-item {
+  margin-top: 20px;
+}
+
+.footer__social-item svg path {
+  transition: all .3s ease-in-out;
+}
+
+.footer__social-item svg:hover path {
+  fill: #7449BB;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 90px;
+}
+
+.footer__nav-list {
+  display: flex;
+  gap: 0 20px;
 }
