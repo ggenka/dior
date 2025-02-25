@@ -460,6 +460,10 @@ body {
   gap: 0 20px;
 }
 
+.swiper-pagination{
+  display: none;
+}
+
 @media (max-width: 1640px) {
   .products__items {
     position: static;
@@ -512,6 +516,14 @@ body {
 
   .container-arrow {
     display: none;
+  }
+
+  .swiper-pagination{
+    display: block;
+  }
+
+  .swiper-pagination-bullet-active{
+      background-color: #7449BB;
   }
 }
 
