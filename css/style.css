@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -484,6 +485,14 @@ body {
   .accordeon__inner {
     padding-left: 0;
   }
+
+  .footer__img {
+    display: none;
+  }
+
+  .footer__nav {
+    margin-right: 0;
+  }
 }
 
 
@@ -499,6 +508,10 @@ body {
 
   .abaut__textbox {
     margin-bottom: 50px;
+  }
+
+  .container-arrow {
+    display: none;
   }
 }
 
@@ -553,6 +566,38 @@ body {
 
   .video__box {
     min-height: 425px;
+  }
+
+  .footer__top {
+    display: block;
+  }
+
+  .footer__logo {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  .footer__item-form {
+    max-width: 400px;
+  }
+
+  .footer__social-list {
+    display: flex;
+    gap: 0 30px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer__social-item+.footer__social-item {
+    margin-top: 0;
+  }
+
+  .footer__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
   }
 }
 
@@ -646,6 +691,19 @@ body {
 
   .accordeon {
     margin-bottom: 140px;
+  }
+
+  .footer__top {
+    margin-bottom: 30px;
+  }
+
+  .footer__item+.footer__item {
+    margin-top: 30px;
+  }
+
+  .footer {
+    padding: 50px 0;
+
   }
 
 }
